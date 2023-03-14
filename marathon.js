@@ -47,6 +47,16 @@ null
 
 // Reserved keywords
 
+// future reversed keyword enum 
+/*
+interface
+implements
+package
+private
+protected
+public
+*/
+// More are there but these are future reserved Keywords
 
 
 
