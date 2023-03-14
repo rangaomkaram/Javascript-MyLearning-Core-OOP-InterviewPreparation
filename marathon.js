@@ -24,4 +24,36 @@ will be in all capitals in general.
 i.e., const PI , const RADII ,  const BOLTMANN TEMP e.t.c
 
  */
+//like camelcasing
+var yourMoblieNumber;
+
+// which is special case -> var simley ="\u"
+
+// COMMENTS
+//
+/*  */
+
+// Literals
+/* there are literal below  numbers,strings, boolean
+2323
+23.5
+"string type 'single quote'one"
+'string type "inside double quote "two'
+true
+false
+null
+// undefined -> not literals
+*/
+
+// Reserved keywords
+
+
+
+
+
+
+
+
+
+
 
