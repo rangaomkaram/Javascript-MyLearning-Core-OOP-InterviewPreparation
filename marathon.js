@@ -58,6 +58,54 @@ public
 */
 // More are there but these are future reserved Keywords
 
+// unicode of e', ' 
+
+console.log("\u00E9");
+console.log("\u0301");
+
+
+//semi colons 
+
+/* return true
+return
+true; */
+
+//above is treated as return; true;
+
+//where to work with semicolons
+/* let score = 0
+; [score, score+3, score+5].forEach(console.log) */
+
+//Integer Literals
+
+/* 
+0 
+100
+0xff -> 255
+0B,0b
+ */
+
+
+//FLoating Point literals
+/* 
+when precision comes 
+like
+3.9
+1.14
+1.99
+3.03e23 => 3.03*10^23
+let billion = 1_000_000_000
+ */
+
+//Arthematic 
+// +,-,/,*,%.** this power 4
+
+Math.pow(3,4)
+Math.pow(3,2/3)
+Math.round(.6)
+Math.ceil(.6) // maximum near by number 
+Math.floor(.6) // lowest near by number
+
 
 
 
