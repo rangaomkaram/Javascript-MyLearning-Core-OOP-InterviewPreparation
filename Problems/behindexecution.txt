@@ -1,0 +1,6 @@
+JavaScript Execution Context
+
+1. global Execution context 
+    -> this 
+
+browser -> global Execution context is window.
