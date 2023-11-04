@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model - Relations</title>
+</head>
+<body style="background-color: #434343; color : #ffff " >
+    <div class="parent">
+        <!-- this is comment  -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wedensday</div>
+        <div class="day">Thursday</div>
+    </div>
+    
+</body>
+<script> 
+const parent = document.querySelector('.parent')
+
+//  console.log(parent);
+// console.log(parent.children)
+// console.log(parent.children[1].innerHTML);
+// for (let i = 0; i < parent.children.length; i++) {
+//     console.log(parent.children[i].innerHTML);
+// }
+parent.children[2].style.color = "red";
+// console.log(parent.firstElementChild); //get first element
+// console.log(parent.lastElementChild);
+
+const firstDay = document.querySelector('.day');
+// console.log(firstDay);
+ // since DOM(Document Object Model) is a tree like structure. 
+// tree traversal manipulations
+//you can get parent element or class
+// console.log(firstDay.parentElement);
+
+// you can get the next slibling 
+// console.log(firstDay.nextElementSibling);
+
+console.log("NODES : ",parent.childNodes);
+
+
+/* output of childnodes:
+
+NODES :  NodeList(11) [text, comment, text, div.day, text, div.day, text, div.day, text, div.day, text]0: text1: comment2: text3: div.day4: text5: div.day6: text7: div.day8: text9: div.day10: textlength: 11[[Prototype]]: NodeListentries: ƒ entries()forEach: ƒ forEach()item: ƒ item()keys: ƒ keys()length: (...)values: ƒ values()constructor: ƒ NodeList()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "NodeList"get length: ƒ length()[[Prototype]]: Object
+
+*/
+</script>
+</html>

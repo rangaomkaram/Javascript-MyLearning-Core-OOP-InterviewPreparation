@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and Remove DOM </title>
+</head>
+<body style="background-color: #434343; color : #fff">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+
+<script>
+    function addLanguage(nameLang){
+        const addList = document.createElement('li');
+        addList.innerHTML = `${nameLang}` // it traverse the total 
+        document.querySelector('.language').appendChild(addList)
+
+    }
+
+    addLanguage("Python");
+    addLanguage("Ruby");
+    
+    // the above method takes more computation -> it has to travesal at end and then add 
+    //example : if you have 1000 childs then it has to read all and then append the new one -> which takes both space and time more.
+
+    //Optimize apporach
+
+    function optiApporachLanguage(lang){
+       const li = document.createElement('li');
+       li.appendChild(document.createTextNode(lang))
+       document.querySelector('.language').appendChild(li)
+    }
+
+    optiApporachLanguage("Java");
+    optiApporachLanguage("R");    
+    optiApporachLanguage("TypeScript");    
+
+    //Edit 
+
+    const secLang = document.querySelector('li:nth-child(2)');
+    // secLang.innerHTML = "Kotlin";
+
+
+
+    // better approach
+    const newLi = document.createElement('li');
+    newLi.textContent = "Matlab";
+    //replaceWith -> method is used to edit the content / text
+    secLang.replaceWith(newLi);
+
+    //edit first lang
+
+    const firstLang = document.querySelector('li:first-child');
+    firstLang.outerHTML = '<li>Cpp</li>';
+
+
+    //Remove
+
+    const lastLang = document.querySelector('li:last-child');
+    lastLang.remove()
+
+
+</script>
+
+</html>
