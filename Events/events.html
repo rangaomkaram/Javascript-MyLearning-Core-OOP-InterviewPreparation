@@ -28,6 +28,57 @@
     // document.getElementById('owl').onclick = function(){
     //     alert("OWL is Clicked!")
     // }
+    //addEventListener -> ('events',method,default = false)
+    // document.getElementById('owl').addEventListener('click',function(){
+    //     alert("Owl is CLicked Again!")
+    // })
+    //attachEvent() -> internet explorer,
+    // jQuery -> onEvent
+    // event object 
+
+    //Events 
+    // type, timestamp,defaultPreventer, 
+    // target,toElement, srcElement, currentTarget
+    // clientX, clientY, tiltX, tiltY, offsetX, offsetY, screenX, screeny
+    // altkey, shitkey, ctrlkey, keyCode  
+
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log(e)
+    // },false)
+
+    // Concept of Event Propagation  
+    /*
+    What is “propagation”? 
+         Propagation refers to how events travel through the Document Object Model (DOM) tree. The DOM tree is the structure which contains parent/child/sibling elements in relation to each other. You can think of propagation as electricity running through a wire, until it reaches its destination.
+    What does event propagation () do?
+        The concept of event propagation describes how events propagate through the DOM tree to reach their destination and what happens to them once they do.
+
+    Phases of JavaScript Event:
+    There are three different phases during the lifecycle of a JavaScript event.
+        Capturing Phase
+        Target Phase
+        Bubbling Phase
+    They follow the same order as listed above.
+     Capturing Phase is when the event goes down to the element. The target phase is when the event reaches the element and the Bubbling phase is when the event bubbles up from the element.
+    */
+
+    document.getElementById('images').addEventListener('click',function(e){
+        console.log("clicked inside ul");
+    },false)
+
+    document.getElementById('owl').addEventListener('click',function(e){
+        console.log("clicked owl!");
+    },false)
+
+    //if you click on owl image , event bubling will happen , bottom to top -> output will be clicked owl then clicked inside ul -> will appear in console.
+
+    
+
+
+        
+    
+
+
 
 </script>
 </html>
