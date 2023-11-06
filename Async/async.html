@@ -22,13 +22,16 @@
 
     //event listener 
 
+    let date = new Date();
+    let presentTime = date.toLocaleTimeString()
+
     const startDate = function(){
         document.querySelector('#start').addEventListener('click',function(){
-            console.log("Ranga date now is:", Date.now());    
+            console.log("Ranga date now is:", presentTime);    
         })
     }
-    setInterval(startDate);
-    const stop = setInterval(startDate,1000);
+    setInterval(startDate,100);
+    const stop = setInterval(startDate,100);
     
 
     document.querySelector('#stop').addEventListener('click',()=>{
