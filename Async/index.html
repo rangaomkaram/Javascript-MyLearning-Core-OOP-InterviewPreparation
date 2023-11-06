@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronus JavaScript</title>
+</head>
+<body>
+    <h1>setTimeOut & setInterval methods</h1>
+    <button id="stop">stop</button>
+    
+</body>
+<script>
+    const sayRanga = function(){
+        console.log("Hi Ranga")
+    }
+    
+    // change the header h1 tag text
+    const changeHeadingText = ()=>{
+        document.querySelector('h1').innerHTML = "Best JavaScript Preparation."
+    }
+
+    // setTimeout(changeHeadingText, 2000); //  Be aware function declaration here don't use sayRanga() ->use sayRanga with out openbrackets . Because it is handler , we have to give reference not function.
+
+    // To stop before the Timeout then use clearTime like below 
+
+    const noChange = setTimeout(changeHeadingText, 2000)
+    // clearTimeout(noChange) 
+
+    //using eventListener better approach
+    document.querySelector('#stop').addEventListener('click',()=>{
+        clearTimeout(noChange)
+        console.log("STOPPED")
+    })
+</script>
+</html>

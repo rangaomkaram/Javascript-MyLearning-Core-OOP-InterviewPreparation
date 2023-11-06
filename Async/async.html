@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async JS</title>
+</head>
+<body>
+    <h1>JavaScript Async and Event</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    
+</body>
+<script>
+    // const tellDate = function(str){
+    //     console.log(str, "Ranga", Date.now())
+    // }
+    // //setInterval
+    // const noDateChange = setInterval(tellDate,1000,"Hi")
+    // clearInterval(noDateChange);
+
+    //event listener 
+
+    const startDate = function(){
+        document.querySelector('#start').addEventListener('click',function(){
+            console.log("Ranga date now is:", Date.now());    
+        })
+    }
+    setInterval(startDate);
+    const stop = setInterval(startDate,1000);
+    
+
+    document.querySelector('#stop').addEventListener('click',()=>{
+            clearInterval(stop)
+            console.log("STOPPED !!!!!!!!!!!!")   
+        })
+</script>
+</html>
