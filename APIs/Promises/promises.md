@@ -20,9 +20,9 @@ The eventual state of a pending promise can either be fulfilled with a value or 
 ## Promise.race()
 
 ## Prototypes -
-### Promisr.prototype.then()
-### Promisr.prototype.catch()
-### Promisr.prototype.finally()
+### Promise.prototype.then()
+### Promise.prototype.catch()
+### Promise.prototype.finally()
 
 
 
