@@ -7,9 +7,24 @@ A Promise is in one of these states:
 pending: initial state, neither fulfilled nor rejected.
 fulfilled: meaning that the operation was completed successfully.
 rejected: meaning that the operation failed.
+
 The eventual state of a pending promise can either be fulfilled with a value or rejected with a reason (error). When either of these options occur, the associated handlers queued up by a promise's then method are called. If the promise has already been fulfilled or rejected when a corresponding handler is attached, the handler will be called, so there is no race condition between an asynchronous operation completing and its handlers being attached.
 
 </p>
+
+# Methods - Promise
+## Promise.all()  -> iterable  -> single promise
+## Promise.allSettled() -> when it is fullfilled , then iteration start -> return in single promise
+## Promise.reslove()
+## Promise.reject()
+## Promise.race()
+
+## Prototypes -
+### Promisr.prototype.then()
+### Promisr.prototype.catch()
+### Promisr.prototype.finally()
+
+
 
 <p>
 You will also hear the term resolved used with promises — this means that the promise is settled or "locked-in" to match the eventual state of another promise, and further resolving or rejecting it has no effect. The States and fates document from the original Promise proposal contains more details about promise terminology. Colloquially, "resolved" promises are often equivalent to "fulfilled" promises, but as illustrated in "States and fates", resolved promises can be pending or rejected as well. For example:
