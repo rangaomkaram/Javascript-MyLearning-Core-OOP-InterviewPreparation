@@ -19,3 +19,4 @@ A low priority fetch request relative to other requests of the same type.
 
 #### auto
 Automatically determine the priority of the fetch request relative to other requests of the same type (default).
+
