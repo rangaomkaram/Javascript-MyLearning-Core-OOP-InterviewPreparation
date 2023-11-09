@@ -1,3 +1,9 @@
+# Classes in JS
+
+## OOP -> object-oriented-programming
+ - This is a Programming paradigm -> which gives structures to write the code in format of OOP or Functional e.t.c..
+
+
 # JavaScript introduced class syntax in ECMAScript 6 (ES6),
 ##### JavaScript is Prototype-based language , classes are primarily syntatic sugar over the  exisiting prototype-based inheritance mechanisms.
 
