@@ -1,5 +1,6 @@
 # JavaScript introduced class syntax in ECMAScript 6 (ES6),
-##### which is also referred to as ES2015. Prior to ES6, JavaScript used prototype-based inheritance and constructor functions to create objects and simulate classes. With the introduction of the class syntax in ES6, JavaScript does have a class-like mechanism for creating and working with objects.
+##### JavaScript is Prototype-based language , classes are primarily syntatic sugar over the  exisiting prototype-based inheritance mechanisms.
+
 
 Here's an example of defining a class in JavaScript using the ES6 class syntax:
 
