@@ -3,6 +3,25 @@
 ## OOP -> object-oriented-programming
  - This is a Programming paradigm -> which gives structures to write the code in format of OOP or Functional e.t.c..
 
+ ### Object
+  -  collection of properties and methods(functions).
+
+## why use OOP
+
+## Components of OOP
+Object literal
+ - constructor function
+ - prototypes
+ - classes
+ - Instances (new, this)
+
+## 4 pillars
+ - Abstraction -> Data hide - fetch
+ - Encapsulation -> wrapper 
+ - Inheritance -> 
+ - Polymorphism
+
+
 
 # JavaScript introduced class syntax in ECMAScript 6 (ES6),
 ##### JavaScript is Prototype-based language , classes are primarily syntatic sugar over the  exisiting prototype-based inheritance mechanisms.
