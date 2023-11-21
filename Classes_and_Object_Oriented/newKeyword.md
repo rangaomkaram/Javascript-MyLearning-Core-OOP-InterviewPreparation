@@ -28,3 +28,16 @@ In this example:
 - The `new` keyword implicitly returns the created object (`john` in this case) unless the constructor returns a different object explicitly.
 
 It's important to note that using `new` with a function is a way to create instances of objects based on that function as a constructor. If the function isn't intended to be a constructor, using `new` might lead to unexpected behavior or errors.
+
+/*
+
+A new object is created: The new keyword initiates the creation of a new JavaScript Object.
+
+A prototype is linked: The newly created object gets linked to the prototype property of constructor function. This means that it has access to properties  and methods defined on the constructor's prototype.
+
+The constructor is called: The constructor function is called with the specified arguments and this is bound to newly created object. If no explicit return value is specified from the constructor, JavaScript assumes this, the newly created object, to be the intended return value.
+
+The new object is returned: After the constructor function has called, if it doesn't return non-primitive value(object, Array, function etc..), the newly created object is returned.
+
+
+*/
