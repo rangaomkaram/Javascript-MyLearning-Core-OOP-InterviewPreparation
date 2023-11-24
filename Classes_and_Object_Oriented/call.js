@@ -2,13 +2,20 @@
 
 function setUser(username){
     this.username = username
+    console.log("The function called explicity using the call keyword")
 }
 
 function createUser(username, email, password){
     // setUser(username) // here we gave only reference 
+
     // to call the explicity we use "call" keyword
     //The object to be used as the current object.Calls a method of an object, substituting another object for the current object.
-    setUser.call(username)
+
+    // setUser.call(username)// we just
+
+    setUser.call(this, username)
+
+    
     this.email = email
     this.password = password
 }
