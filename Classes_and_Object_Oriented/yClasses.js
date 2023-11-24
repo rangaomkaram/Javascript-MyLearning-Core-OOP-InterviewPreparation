@@ -38,3 +38,19 @@ const firstObj = new User("uday","udaykumar@mail.com",345)
 
 const secUser = new User("full name first name last name","uday@mail.com",34534);
 console.log(secUser.captialEachLetterofWord())
+
+// class concept underhood , what happens -> let's see
+
+function Customer(username, email, password) {
+    this.username  = username;
+    this.email = email;
+    this.password = password;    
+}
+
+Customer.prototype.encryptPassword = function () {
+    return `${this.password}3r4`;    
+}
+
+const thirdCustomer = new Customer("Customername", "customer@email.com", 234334);
+
+console.log(thirdCustomer.encryptPassword())
