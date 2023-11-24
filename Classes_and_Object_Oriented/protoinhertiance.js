@@ -16,4 +16,12 @@ class Mentor extends Candidate{
         this.password = password;
     }
 
+    addNewProduct(){
+        console.log(`Added new product of course for the candidate by ${this.username}`);
+    }
+
 }
+
+const newCustomer = new Mentor("CandidatefName","CandidateEmail","pwd1233");
+
+newCustomer.addNewProduct()
