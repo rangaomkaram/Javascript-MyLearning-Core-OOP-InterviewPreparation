@@ -17,7 +17,7 @@ class Consumer{
 }
 
 const user = new Consumer("Uday");
-console.log(user.createUserId())
+// console.log(user.createUserId()) // this gives error
 
 /*
 
