@@ -10,6 +10,12 @@
     <button>Button Clicked!</button>
 </body>
 <script>
+/*  
+
+In JavaScript, the bind() method is used to create a new function with a specified this value and initial arguments passed to the function when the new function is called. It doesn't execute the function immediately but instead creates a new function that, when called, has its this keyword set to the provided value.
+
+ */
+
     class React {
         constructor(){
             this.library = "React"
@@ -17,10 +23,13 @@
 
             //requirement 
 
+            document.querySelector('button').addEventListener('click',this.handelClick.bind(this))
+
         }
          handelClick(){
             console.log("button Clicked!");
             console.log(this.server);
+            console.log(this);
          }
     }
 
