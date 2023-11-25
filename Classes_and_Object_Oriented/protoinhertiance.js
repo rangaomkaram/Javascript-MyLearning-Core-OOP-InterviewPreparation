@@ -23,5 +23,20 @@ class Mentor extends Candidate{
 }
 
 const newCustomer = new Mentor("CandidatefName","CandidateEmail","pwd1233");
+const oldCustomer = new Candidate("OldCustomer")
 
 newCustomer.addNewProduct()
+
+newCustomer.logMe()
+
+// oldCustomer.addNewProduct() // we get the error , since we are not having the method addNewProduct() init -> and it is parent class 
+
+// Here Mentor is child class -> we can inheritance the properties of the parent class(Candidate).
+
+// Here is the syntax to check the instanceof which object belongs to which class
+
+console.log(newCustomer instanceof Candidate);
+console.log(newCustomer instanceof Mentor)
+
+console.log(oldCustomer instanceof Candidate);
+console.log(oldCustomer instanceof Mentor);
