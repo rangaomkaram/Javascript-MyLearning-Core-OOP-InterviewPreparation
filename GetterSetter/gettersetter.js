@@ -6,10 +6,13 @@ class Customer {
     }
 
     get email(){
-        return this.email.toString()
+        return this._email.toUpperCase()
 
+    }
+    set email(val){
+        this._email = val;
     }
 }
 
 const newCust = new Customer("fname","dummy@gmail.com",12345);
-console.log(newCust.password)
+console.log(newCust.email)
