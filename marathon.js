@@ -107,10 +107,7 @@ Math.ceil(.6) // maximum near by number
 Math.floor(.6) // lowest near by number
 
 
-
-
-
-
+//Math PI
 
 
 
