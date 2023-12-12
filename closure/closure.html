@@ -7,19 +7,42 @@
     <title>Closure</title>
 </head>
 <body>
+    <button id="blue">Blue</button>
+    <button id="red">Red</button>
     
 </body>
 <script>
-    function outer() {
-        let myName = "uday";
+    // function outer() {
+    //     let myName = "uday";
         
-        function inner() {
-            console.log(`Accessing from inner ${myName}`)
+    //     function inner() {
+    //         console.log(`Accessing from inner ${myName}`)
             
-        }
-        inner()
-    }
-    console.log(`TOO OUTER:${myName}`);
+    //     }
+    //     inner()
+    // }
+    // console.log(`TOO OUTER:${myName}`);
 </script>
 <script src="../GetterSetter/gettersetter.js"></script>
+<script>
+    // document.getElementById('blue').onclick = function () {
+    //      document.body.style.backgroundColor = 'blue'   
+    // }
+    // document.getElementById('red').onclick = function () {
+    //      document.body.style.backgroundColor = 'red'   
+    // }
+
+    function clickHandler(color) {
+        // document.body.style.backgroundColor = `${color}`
+       return function () {
+        document.body.style.backgroundColor = `${color}`;
+        
+       }
+        
+    }
+    document.getElementById('red').onclick = clickHandler("red");
+    document.getElementById('blue').onclick = clickHandler("blue");
+
+</script>
+
 </html>
