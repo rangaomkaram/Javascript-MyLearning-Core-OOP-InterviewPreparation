@@ -17,4 +17,21 @@ console.log(firstname)
 console.log(lastname)
 
 
+// Object
+
+const userObj = {
+    fname: "uday",
+    lname: "raja"
+}
+
+console.log(userObj.fname);
+console.log(userObj.lname);
+
+const {fsname, lsname} = {
+    fsname: "Rang",
+    lsname: "oak"
+}
+
+console.log(fsname);
+console.log(lsname)
 
