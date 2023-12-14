@@ -15,3 +15,6 @@ const [firstname,lastname] = ["ranga","sesha"];
 
 console.log(firstname)
 console.log(lastname)
+
+
+
